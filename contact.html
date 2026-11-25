@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Brae Moves</title>
+    <meta
+      name="description"
+      content="Request a free moving quote from Brae Moves. Call 0401 176 059 or email braemoves@protonmail.com. Mon–Fri Victoria-wide."
+    />
+    <link rel="icon" href="./images/logo.png" type="image/png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="./" aria-label="Brae Moves home">
+          <img class="brand-logo" src="./images/logo.png" alt="Brae Moves" width="160" height="90" />
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Primary">
+          <a href="./">Home</a>
+          <a href="./services.html">Services</a>
+          <a href="./contact.html" aria-current="page">Contact Us</a>
+        </nav>
+        <a class="header-phone" href="tel:0401176059">0401 176 059</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Contact</p>
+          <h1>Free quote. Fast reply.</h1>
+          <p>
+            Call or send the form — tell us pickup, drop-off and timing. Available Monday to Friday during business
+            hours across Victoria.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <aside class="contact-card reveal">
+            <h2>Direct contact</h2>
+            <div class="contact-rows">
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:0401176059">0401 176 059</a>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:braemoves@protonmail.com">braemoves@protonmail.com</a>
+              </div>
+              <div>
+                <strong>Hours</strong>
+                <span>Monday to Friday · business hours</span>
+              </div>
+              <div>
+                <strong>Area</strong>
+                <span>Victoria · statewide</span>
+              </div>
+              <div>
+                <strong>Quotes</strong>
+                <span>Always free · same-day options</span>
+              </div>
+            </div>
+          </aside>
+
+          <div class="reveal">
+            <h2 class="section-title" style="margin-bottom: 1.15rem">Request a quote</h2>
+            <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact" />
+              <p class="sr-only">
+                <label>Don’t fill this out: <input name="bot-field" /></label>
+              </p>
+
+              <div class="form-row two">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required />
+                </div>
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+                </div>
+              </div>
+
+              <div class="form-row two">
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <div class="field">
+                  <label for="service">Service</label>
+                  <select id="service" name="service">
+                    <option value="Moving">Moving</option>
+                    <option value="Courier">Courier</option>
+                    <option value="Events">Events</option>
+                    <option value="Weddings">Weddings</option>
+                    <option value="Not sure yet">Not sure yet</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row two">
+                <div class="field">
+                  <label for="from">From</label>
+                  <input id="from" name="from" type="text" placeholder="Suburb / town" required />
+                </div>
+                <div class="field">
+                  <label for="to">To</label>
+                  <input id="to" name="to" type="text" placeholder="Suburb / town" required />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Date, load size, same-day need…"
+                  required
+                ></textarea>
+              </div>
+
+              <p class="form-note">Prefer a call? <a href="tel:0401176059">0401 176 059</a></p>
+              <button class="btn btn-primary" type="submit">Send free quote request</button>
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <img class="footer-logo" src="./images/logo.png" alt="Brae Moves" width="200" height="110" />
+          <p>Moving, courier, events and weddings across Victoria.</p>
+        </div>
+        <div>
+          <h3>Pages</h3>
+          <div class="footer-links">
+            <a href="./">Home</a>
+            <a href="./services.html">Services</a>
+            <a href="./contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <div class="footer-contact">
+            <a href="tel:0401176059">0401 176 059</a>
+            <a href="mailto:braemoves@protonmail.com">braemoves@protonmail.com</a>
+            <span>Mon–Fri · Free quotes</span>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span data-year></span> Brae Moves</span>
+        <span>Family owned · Victoria</span>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
